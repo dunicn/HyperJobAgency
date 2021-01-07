@@ -1,0 +1,11 @@
+{% extends "menu/base.html" %}
+{% block content %}
+    <form method="get" action="resume/new">
+        {% csrf_token %}
+        <button type="submit">Resume</button>
+    </form>
+    <form method="get" action="vacancy/new">
+        {% csrf_token %}
+        <button type="submit">Vacancy</button>
+    </form>
+{% endblock content %}
